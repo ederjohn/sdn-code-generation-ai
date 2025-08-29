@@ -1,0 +1,26 @@
+Tarefa 1: Independente de topologia, envio completo de pacotes entre todos os hosts.
+
+Prompt Zero-shot: "Develop, in Python, a POX controller for a software-defined network."
+Prompt Few-shot: "I created a simple software-defined network in Python using the Mininet library. In this network, I wanted to control the flow of packets between hosts. To test communication within the network, I needed to start a controller. In this context, make a POX controller that manages packet forwarding between hosts, Additionally, ensure the controller learns MAC addresses. Finally, provide a brief explanation of the implementation."
+
+--------------------------------------------------------------------------------------------
+
+Tarefa 2: De acordo com a topologia, fazer um bloqueio entre hosts solicitado via prompt.
+
+Prompt Zero-shot: "Develop, in Python, a POX controller for a software-defined network where it blocks pings between even hosts with odd hosts."
+Prompt Few-shot: "I created a simple software-defined network in Python using the Mininet library. In this network, I wanted to control the flow of packets between hosts. To test communication within the network, I needed to start a controller. In this context, make a POX controller to block pings between even hosts with odd hosts. Additionally, implement speed up the timeout when the ping block occurs. Finally, provide a brief explanation of the implementation."
+
+--------------------------------------------------------------------------------------------
+
+Tarefa 3: Desenvolver um firewall de camada de rede para a SDN.
+
+Prompt Zero-shot: "Develop, in Python, a layer three firewall POX controller for a software-defined network."
+
+Prompt Few-shot: "I created a simple software-defined network in Python using the Mininet library. In this network, I wanted to control the flow of packets between hosts. To test communication within the network, I needed to start a controller. In this context, make a layer three firewall POX to manage the software-defined network, which has the following functions: 
+1) Initialize control rules;
+2) Manage packet flow based on learned MAC addresses;
+3) Consider that functions is implemented:
+
+ ''' def add_firewall_rules(src_ip, dst_ip, protocol="tcp"): rule = f"{src_ip} {dst_ip} {protocol}\n" with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: s.connect(("127.0.0.1", 6633)) 
+# Assuming POX listens on this port s.sendall(rule.encode()) print(f"Rule added: Block {protocol} from {src_ip} to {dst_ip}") '''
+Finally, provide a brief explanation of the new implementation."
