@@ -40,7 +40,7 @@ Open a *pull request* or *issue* with your proposal.
 
 ## 📄 License
 
-Specify your project license here (e.g., [MIT](https://opensource.org/licenses/MIT) or Apache 2.0).  
+Apache 2.0. See LICENSE file.
 
 
 ## 📬 Contact
