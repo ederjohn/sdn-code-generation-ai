@@ -1,6 +1,6 @@
 # sdn-code-generation-ai
 
-Repository for the paper **Trust, But Verify: An Empirical Evaluation of AI-Generated Code for SDN Controllers** submitted for the IEEE Symposium on Computers and Communications (ISCC 2026).
+Repository for the paper **Trust, But Verify: An Empirical Evaluation of AI-Generated Code for SDN Controllers**.
 
 Authors: Felipe A. Soares and Muriel F. Franco and Eder J. Scheid and Lisandro Z. Granville
 
